@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <script>
+        var opc = 0;
+       do {
+            opc = prompt("Si quieres introducir algúna nota: \nPulse 1. \nPara salir pulse -1.");
+            parseInt(opc);
+            switch (opc) {
+                case '-1': alert("Hasta luego.");
+                    break;
+                case '1':
+
+                    var num = prompt("¿Cuántas notas vas a introducir, por favor?");
+                    parseInt(num);
+
+                    for (var i = 0; i < num; i++) {
+                        var calificacion = prompt("Introduce el valor de la nota " + (i + 1) + ", por favor");
+                        parseInt(calificacion);
+                        if(calificacion == 10 ){
+                            alert('Si, hay algún diez');
+                        }
+                        else{
+                            alert('No');
+                        }
+                        
+                        /*
+                        Queria probar meter un switch pero creo que no es posible.
+                        switch (calicacion) {
+                            case '-1': alert("Hasta luego.");
+                                break;
+
+                            case '0':
+                            case '1':
+                            case '2':
+                            case '3':
+                            case '4':
+                            case '5':
+                            case '6':
+                            case '7':
+                            case '8':
+                            case '9':
+                                alert("NO");
+                                break;
+                            case '10':
+                                alert("SI");
+                                break;
+
+                            default: alert("No es una calificacion válida");
+                            
+                        }
+                        */
+
+                    }
+                break;
+
+                default: alert("No es una opción válida");
+                    break;
+            }
+        } while (opc !=-1);
+    </script>
+</body>
+
+</html>
+
+/*10. Realiza un programa que lea una secuencia de notas (con valores que van de 0 a 10, sin decimales).
+Se leerá una nota por línea. La entrada acabará con el valor -1.
+El programa debe mostrar por salida estándar "SI" si hay algún 10, "NO" en caso contrario.
+*/

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento Sueldo</title>
+</head>
+<body>
+    <script>
+var sueldo = prompt("Introduce el sueldo del operario, por favor.");
+parseInt(sueldo);
+var antiguedad = prompt("Introduce la antiguedad del operario, por favor.");
+parseInt(antiguedad);
+var totalSueldo = 0;
+if(sueldo < 500 && antiguedad == 10)
+    totalSueldo = sueldo*3;
+else if(sueldo < 500 && antiguedad < 10)
+    totalSueldo = sueldo*2;
+else if(sueldo >= 500)
+    totalSueldo = sueldo;
+else{
+    totalSueldo = sueldo;
+}
+
+alert("El sueldo final del operario es: "+totalSueldo+"€");
+    </script>
+    
+</body>
+</html>

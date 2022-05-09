@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+
+</head>
+<body>
+    <script>
+        var horasTrabajo = prompt("Introduce el número de horas trabajadas, por favor");
+        parseFloat(horasTrabajo);
+        var precioHora = prompt("Introduce el precio por hora, por favor");
+        parseFloat(precioHora);
+        var totalBruto, totalNeto = 0;
+
+        if(horasTrabajo <= 35){
+            totalBruto = horasTrabajo * precioHora;
+            if(totalBruto <= 500){
+                alert("Su salario es: "+totalBruto);
+            }
+            else if(totalBruto > 500 && totalBruto < 900){
+              totalNeto=((totalBruto-500)*0.25)+totalBruto;
+                alert("Su salario es: "+totalNeto);
+            }
+            else if(totalBruto >= 900){
+                totalNeto = ((totalBruto-900)*0.45)+(400*0.25)+totalBruto;
+                alert("Su salario es: "+totalNeto);
+            }   
+        }
+        else if (horasTrabajo > 35){
+            totalBruto = (horasTrabajo * precioHora)*1.5;
+            if(totalBruto <= 500){
+                alert("Su salario es: "+totalBruto);
+            }
+            else if(totalBruto > 500 && totalBruto < 900){
+                totalNeto=((totalBruto-500)*0.25)+totalBruto;
+                alert("Su salario es: "+totalNeto);
+            }
+            else if(totalBruto >= 900){
+                totalNeto = ((totalBruto-900)*0.45)+(400*0.25)+totalBruto;
+               alert("Su salario es: "+totalNeto);
+            }
+                         
+        }
+        else{
+            alert("Esa opción, no está contemplada, disculpa, hay algún error.")
+        }
+            
+        
+        
+                     
+
+    </script>
+</body>
+</html>
+/*
+6.	Escribe un programa que lea en una línea el número de horas trabajadas y en otra línea el precio por hora. Calcula el salario neto semanal de un trabajador en función del número de horas trabajadas y la tasa de impuestos de acuerdo a las siguientes reglas:
+• Las primeras 35 horas se pagan a tarifa normal.
+• Las horas que pasen de 35 se pagan a 1.5 veces la tarifa normal.
+Al sueldo bruto se le aplicarán las siguientes tasas de impuestos:
+• Los primeros 500 euros son libres de impuestos.
+• Los siguientes 400 tienen un 25% de impuestos.
+• Los restantes un 45% de impuestos.
+*/

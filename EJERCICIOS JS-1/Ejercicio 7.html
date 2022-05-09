@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <script>
+        var n = 0;
+        while(n<2){
+            n = prompt("Introduce un número mayor o igual a 2, por favor.");
+            parseInt(n);
+            if(n>= 2){
+                for(var i=2; i<=n; i++){
+                    if(i%2==0){
+                        alert("Los número pares son "+i);
+                    }
+                    
+                }
+                
+            }
+            else{
+                alert("Se ha pedido que el número sea mayor o igual a 2, intentelo de nuevo, por favor.");
+            }
+        }
+        
+    </script>
+</body>
+</html>
+/*
+7.	Realiza un programa que lea un numero N y muestre por la salida estándar todos los pares desde 2 hasta N (inclusive).
+Cada número se mostrará en una línea distinta. N siempre será mayor o igual a 2.
+*/

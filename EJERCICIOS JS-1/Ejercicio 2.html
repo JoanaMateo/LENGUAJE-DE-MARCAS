@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Solicitamos por pantalla 3 números.
+        var num1 = prompt ("Introduce un número, por favor.");
+        var num2 = prompt ("Introduce un número, por favor.");
+        var num3 = prompt ("Introduce un número, por favor.");
+        num1= parseInt(num1);
+        num2= parseInt(num2);
+        num3= parseInt(num3);
+
+        //Si al menos uno de los valores ingresados es mayor a 10,
+        //mostrar por la salida estándar (normalmente el teclado) “ALGUNO MAYOR QUE 10”. En caso contrario mostrar “NINGUNO MAYOR QUE 10”.
+        if(num1 >10  || num2>10 || num3>10){
+            document.write("ALGUNO MAYOR QUE 10");
+        }else{
+            document.write("NINGUNO MAYOR QUE 10");
+        }
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

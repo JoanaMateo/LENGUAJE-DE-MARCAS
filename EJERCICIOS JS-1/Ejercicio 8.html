@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <script>
+        var n=0;
+        while(n<1){
+            n = prompt("Introduce un número mayor o igual a 1, por favor.");
+            parseInt(n);
+            if(n>= 1){
+                for(var i=n; i>0; i--){
+                    if(i%2!=0){
+                        alert("Los número impares son "+i);
+                    }
+                } 
+            }
+            else{
+                alert("Se ha pedido que el número sea mayor o igual a 1, intentelo de nuevo, por favor.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+/*
+8.	Realiza un programa que lea un numero N y muestre por la salida estándar todos los impares desde N(inclusive) hasta 1 .
+Cada número se mostrará en una línea distinta. N siempre será mayor o igual a 1.
+*/

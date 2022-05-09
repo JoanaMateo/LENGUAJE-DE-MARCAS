@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioCadenas 1</title>
+
+    <script>
+        function solicitaCadena() {
+            var cadena = prompt("Introduce una cadena, por favor");
+           return cadena;
+        }
+
+        function sustituyeCarecterGuiones(parametro){
+            //Ejecuto el código para sustituir cada vocal por un guion.
+            var reg = /a/g;
+            var cadenaNueva = parametro.replace(reg,"-");
+
+            return cadenaNueva;
+        }
+        function separaCarecteres(parametro){
+           
+           var cadenaNueva = parametro.split('');
+           var union = cadenaNueva.join('-');
+
+            return union;
+
+            
+        }
+    </script>
+</head>
+<body>
+    <script>
+        
+       var cadenita = solicitaCadena();
+
+       alert(sustituyeCarecterGuiones(cadenita));
+
+       alert(separaCarecteres(cadenita));
+        
+    </script>
+</body>
+</html>

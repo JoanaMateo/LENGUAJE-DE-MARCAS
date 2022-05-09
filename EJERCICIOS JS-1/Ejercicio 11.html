@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+
+<body>
+    <script>
+        var tecla = 1;
+        
+        while (tecla != 0) {
+            tecla= prompt("Para calcular el cambio:\nPulse 1. \nSalir, pulse 0.");
+            parseInt(tecla);
+            switch(tecla){
+                case '1':
+                    var dinero = prompt("Introduce la cantidad de dinero");
+                    parseInt(dinero);
+                        if (dinero % 5 == 0) {
+                            
+                            alert("pensar en cambio");
+                        }
+                        else {
+                            alert("Debe de ser múltiplo de 5, la cantidad que introduzcas, por favor.");
+                        }
+                break;
+                case '0':alert("Hasta luego");
+                break;
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>
+
+/*
+11. Realiza un programa que lea una cantidad de dinero (múltiplo de 5)
+y tras ello desglose el cambio en billetes de 500,200,100,50,20,10,5 intentado dar el mínimo número de billetes.
+El programa mostrará por la salida estándar el número mínimo de billetes.
+*/

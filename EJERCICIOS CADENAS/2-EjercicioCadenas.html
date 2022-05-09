@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        //rompa un string en dos mitades y las imprima por pantalla.
+        var cadena = prompt("Introduce una cadena, por favor.");
+        //Si la cadena tiene un número par:
+        if(cadena.length%2 == 0){
+            alert("entra if")
+            var cadena1 = cadena.substr(0,cadena.length/2);
+            var cadena2 = cadena.substr(cadena.length/2,cadena.length); 
+        }
+        else{
+            alert("Entra else")
+            var cadena1 = cadena.substr(0,cadena.length/2);
+            var cadena2 = cadena.substr(cadena.length/2,cadena.length); 
+        }
+        //No me sale el color.
+       cadena2.fontcolor("green");
+        alert(cadena1);
+        alert(cadena2);
+
+    </script>
+</body>
+</html>
